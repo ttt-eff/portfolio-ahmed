@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eng. Ahmed Atif - Junior Data Analyst Portfolio. Expert in SQL, Python, Power BI, and Data Analysis.">
+  <title>Eng. Ahmed Atif | Data Analyst Portfolio</title>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== LOADING SCREEN ==================== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">AA</div>
+      <div class="loader-bar">
+        <div class="loader-progress" id="loaderProgress"></div>
+      </div>
+      <p class="loader-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ==================== CURSOR GLOW ==================== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ==================== ANIMATED BACKGROUND ==================== -->
+  <div class="bg-animation" id="bgAnimation">
+    <div class="animated-gradient"></div>
+    <div class="animated-grid"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="blur-circle blur-1"></div>
+    <div class="blur-circle blur-2"></div>
+    <div class="blur-circle blur-3"></div>
+    <div class="stars-layer" id="starsLayer" aria-hidden="true"></div>
+    <canvas id="particlesCanvas"></canvas>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">AA</span>
+        <span class="logo-text">Portfolio</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#footer" class="nav-link">Footer</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==================== SECTION 1: LANDING / HOME ==================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <!-- Left Column -->
+        <div class="hero-content fade-up">
+          <p class="hero-greeting">Hello, I am</p>
+          <h1 class="hero-name">Eng. AHMED ATIF</h1>
+          <div class="typing-wrapper">
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Junior Data Analyst with hands-on experience in cleaning, transforming, and analyzing structured datasets using SQL and Python (Pandas &amp; NumPy) to support business decision-making.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary ripple-btn">
+              <span>Hire Me</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary ripple-btn">
+              <span>View Projects</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="hero-image fade-right">
+          <div class="profile-frame floating">
+            <div class="profile-glow"></div>
+            <div class="profile-ring"></div>
+            <div class="profile-inner">
+              <!-- Replace with your image -->
+              <img src="assets/profile-pic.jpeg" alt="Ahmed Atif">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: ABOUT ME ==================== -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <!-- Left Column -->
+        <div class="about-content fade-left">
+          <h2 class="section-title">
+            <span class="title-accent">About</span> Me
+          </h2>
+          <div class="about-text">
+            <p>I'm a Junior Data Analyst with a strong passion for uncovering meaningful insights from raw, complex data. I work daily with SQL, Python (Pandas &amp; NumPy), and Power BI to clean, analyze, and visualize data in a way that drives business decisions.</p>
+            <p>I believe that good analysis is not just about numbers, but about understanding the story behind them and translating that story into actionable recommendations for stakeholders.</p>
+            <p>I pay great attention to data quality and accuracy, ensuring that every report I deliver is reliable, consistent, and easy to interpret.</p>
+            <p>I enjoy collaborating with cross-functional teams, whether it's marketing, finance, or operations, to identify trends, detect outliers, and solve real-world problems.</p>
+            <p>I'm continuously learning new tools and techniques, from advanced SQL queries to statistical analysis, to grow my skills and take on more challenging projects.</p>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="about-image fade-right">
+          <div class="about-frame glass-card">
+            <!-- Replace with your image -->
+            <img src="assets/profile-pic.jpeg" alt="About Me">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: EDUCATION ==================== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <h2 class="section-title center fade-up">
+          <span class="title-accent">Education</span>
+        </h2>
+
+        <div class="timeline fade-up">
+          <div class="timeline-line"></div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+              </svg>
+            </div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-badge">BFCAI Graduate</span>
+              <h3 class="timeline-degree">Benha University</h3>
+              <div class="timeline-details">
+                <p class="timeline-meta"><span>Graduation</span> January 2026</p>
+                <p class="timeline-meta"><span>Department</span> Cybersecurity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: SKILLS ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section-title center fade-up">
+          My <span class="title-accent">Skills</span>
+        </h2>
+
+        <div class="skills-grid">
+          <div class="skill-card glass-card border-animate floating fade-up" data-delay="0">
+            <div class="skill-logo">
+              <img src="assets/logos/excel.svg" alt="Excel Logo">
+            </div>
+            <h3 class="skill-name">Excel</h3>
+          </div>
+
+          <div class="skill-card glass-card border-animate floating fade-up" data-delay="100">
+            <div class="skill-logo">
+              <img src="assets/logos/sql.svg" alt="SQL Logo">
+            </div>
+            <h3 class="skill-name">SQL</h3>
+          </div>
+
+          <div class="skill-card glass-card border-animate floating fade-up" data-delay="200">
+            <div class="skill-logo">
+              <img src="assets/logos/python.svg" alt="Python Logo">
+            </div>
+            <h3 class="skill-name">Python</h3>
+          </div>
+
+          <div class="skill-card glass-card border-animate floating fade-up" data-delay="300">
+            <div class="skill-logo">
+              <img src="assets/logos/powerbi.svg" alt="Power BI Logo">
+            </div>
+            <h3 class="skill-name">Power BI</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: PROJECTS ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section-title center fade-up">
+          My <span class="title-accent">Projects</span>
+        </h2>
+
+       
+            <div class="project-tech">
+              <span class="tech-badge">SQL</span>
+              <!-- ==================== PROJECT 2: GRADUATION PROJECT ==================== -->
+        <div class="project-card glass-card fade-up">
+            <div class="project-image">
+                <img src="assets/Image.jpeg" alt="Graduation Project">
+                <div class="project-overlay"></div>
+            </div>
+            
+        
+
+            <div class="project-content">
+                <span class="project-label">Graduation Project</span>
+                <h3 class="project-title">Detect Phishing & Hacking Websites</h3>
+                
+                <p class="project-desc">
+                    Designed and developed an advanced analytics system to detect fraudulent activities, phishing websites, and data manipulation.
+                </p>
+                <p class="project-desc">
+                    Utilized data patterns and anomaly detection techniques to build automated triggers, providing real-time security insights and risk assessment dashboards.
+                </p>
+          -- new project-- 
+            <!-- E-Commerce Marketplace Dashboard -->
+        <div class="project-card glass-card fade-up">
+          <div class="project-image">
+           <img src="c:\Users\TEFA\Downloads\portfolio-ahmed-main\portfolio-ahmed-main\assets\dash.png copy.png" alt="E-Commerce Marketplace Performance Dashboard">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content" style="padding: 1.5rem;">
+            <h3 style="margin-bottom: 0.5rem; color: #fff;">E-Commerce Marketplace Dashboard</h3>
+            <p style="font-size: 0.9rem; color: #ccc;">Interactive Power BI dashboard analyzing sales performance, profit margins, customer retention, and regional metrics.</p>
+            <div class="project-tech" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span style="background: rgba(152, 87, 87, 0.1); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">Power BI</span>
+              <span style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">Data Analysis</span>
+              <span style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">DAX</span>
+            </div>
+          </div>
+        </div>
+<div class="project-card glass-card fade-up">
+  <!-- قسم الصورتين جنب بعض -->
+  <div class="project-image" style="display: flex; gap: 8px; padding: 10px; background: rgba(0, 0, 0, 0.2);">
+    <img src="assets/churn analysis_summary.png" 
+         alt="Churn Analysis Summary" 
+         style="width: 50%; height: auto; object-fit: contain; border-radius: 6px;">
+         
+    <img src="assets/churn analysis_summary2.png" 
+         alt="Churn Analysis Prediction" 
+         style="width: 50%; height: auto; object-fit: contain; border-radius: 6px;">
+         
+    <div class="project-overlay"></div>
+  </div>
+
+  <!-- تفاصيل المشروع -->
+  <div class="project-content" style="padding: 1.5rem;">
+    <h3 style="margin-bottom: 0.5rem; color: #fff;">Customer Churn Analysis & Prediction</h3>
+    <p style="font-size: 0.9rem; color: #ccc;">Interactive Power BI dashboard analyzing customer churn summary metrics alongside machine learning predictive insights.</p>
+    
+    <div class="project-tech" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      <span style="background: rgba(152, 87, 87, 0.1); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">Power BI</span>
+      <span style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">Data Analysis</span>
+      <span style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">DAX</span>
+      <span style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">Predictive Modeling</span>
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>SQL Server</span>
+                    <span>Security Analytics</span>
+                </div>
+            </div>
+        </div>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Power BI</span>
+            </div>
+
+            <div class="project-buttons">
+              <a href="#" class="btn btn-outline ripple-btn" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.515.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.635.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="btn btn-primary ripple-btn" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 6: SERVICES ==================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section-title center fade-up">
+          My <span class="title-accent">Services</span>
+        </h2>
+
+        <div class="services-grid">
+          <div class="service-card glass-card floating fade-up" data-delay="0">
+            <div class="service-icon">
+              <img src="assets/icons/data-analysis.svg" alt="Data Analysis">
+            </div>
+            <h3 class="service-name">Data Analysis</h3>
+          </div>
+
+          <div class="service-card glass-card floating fade-up" data-delay="100">
+            <div class="service-icon">
+              <img src="assets/icons/sql-service.svg" alt="SQL">
+            </div>
+            <h3 class="service-name">SQL</h3>
+          </div>
+
+          <div class="service-card glass-card floating fade-up" data-delay="200">
+            <div class="service-icon">
+              <img src="assets/icons/python-service.svg" alt="Python">
+            </div>
+            <h3 class="service-name">Python</h3>
+          </div>
+
+          <div class="service-card glass-card floating fade-up" data-delay="300">
+            <div class="service-icon">
+              <img src="assets/icons/powerbi-service.svg" alt="Power BI">
+            </div>
+            <h3 class="service-name">Power BI</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 7: TESTIMONIALS ==================== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title center fade-up">
+          <span class="title-accent">Testimonials</span>
+        </h2>
+
+        <div class="testimonial-slider fade-up">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-card glass-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Ahmed transformed our raw data into meaningful insights with impressive SQL and Power BI skills. His dashboards were clear, interactive, and extremely useful."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">MJ</div>
+                  <div class="author-info">
+                    <h4>Michael Johnson</h4>
+                    <span>Senior Business Analyst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Professional, reliable, and highly skilled in Python and data analysis. Working with Ahmed was an excellent experience."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">SW</div>
+                  <div class="author-info">
+                    <h4>Sarah Williams</h4>
+                    <span>Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Ahmed consistently delivered high-quality analysis and visual reports. I highly recommend him for any data analysis project."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">DB</div>
+                  <div class="author-info">
+                    <h4>David Brown</h4>
+                    <span>Project Manager</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+          <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+
+          <div class="slider-dots" id="sliderDots">
+            <button class="dot active" data-index="0" aria-label="Testimonial 1"></button>
+            <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
+            <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 8: GET IN TOUCH ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section-title center fade-up">
+          Get In <span class="title-accent">Touch</span>
+        </h2>
+
+        <div class="contact-grid fade-up">
+          <a href="https://wa.me/201020876648" class="contact-card glass-card gradient-border" target="_blank" rel="noopener">
+            <div class="contact-icon whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <h3 class="contact-type">WhatsApp</h3>
+            <p class="contact-value">01020876648</p>
+          </a>
+
+          <a href="mailto:ahmedatiiif882@gmail.com" class="contact-card glass-card gradient-border">
+            <div class="contact-icon email">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <h3 class="contact-type">Email</h3>
+            <p class="contact-value">ahmedatiiif882@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== SECTION 9: FOOTER ==================== -->
+  <footer class="footer section" id="footer">
+    <div class="footer-divider"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-icon">AA</span>
+            <span class="logo-text">Portfolio</span>
+          </a>
+          <p class="footer-tagline">Transforming data into actionable insights.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.062 2.062 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.515.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.635.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Eng. Ahmed Atif. All rights reserved.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
